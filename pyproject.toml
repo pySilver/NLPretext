@@ -27,12 +27,16 @@ classifiers = [  # Update me
   "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
+[[tool.poetry.source]]
+name = "pypi-public"
+url = "https://pypi.org/simple/"
+
 [tool.poetry.scripts]
 # Entry points for the package https://python-poetry.org/docs/pyproject/#scripts
 "nlpretext" = "nlpretext.cli.__main__:app"
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.11"
+python = ">=3.9,<3.13"
 typer = {extras = ["all"], version = ">=0.3.2"}
 rich = ">=10.1"
 chardet = ">=3.0.4"
@@ -42,7 +46,7 @@ ftfy = ">=4.2.0"
 mosestokenizer = ">=1.1.0"
 nlpaug = ">=1.0.1"
 nltk = ">=3.4.2"
-numpy = "^1.22"
+numpy = "^1.26.4"
 phonenumbers = ">=8.10.12"
 regex = ">=2019.8.19"
 sacremoses = ">=0.0.13"
